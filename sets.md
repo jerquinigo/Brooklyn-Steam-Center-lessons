@@ -41,3 +41,62 @@ if "cat" in myset:
 print("cat" in myset)
 # this second way would return boolean true or false
 ```
+
+There are two methods to add to the set. add() and update(). add will add one single key to the set and update will add multiple keys to the list. Keep in mind that sets and dictionaries are unordered collections of data. When you print out your set, all the keys will be randomly place. They are not indexed like lists.
+
+example of using the add() method
+```python
+myset = {"cat", "dog", "chinchilla", "turtle"}
+myset.add("dyno")
+print(myset)
+#results
+{'dog', 'chinchilla', 'dyno', 'cat', 'turtle'}
+```
+
+example of using the update() method with brackets and without brackets
+
+if you add data to a set with out using brackets, your string will be seperated into individual characters.
+example:
+```python
+myset = {"cat", "dog", "chinchilla", "turtle"}
+myset.update("weasel", "furret")
+print(myset)
+#results
+{'cat', 'l', 'chinchilla', 'u', 'dog', 't', 's', 'turtle','w', 'f', 'e', 'a', 'r'}
+```
+
+to fix having data entered into multiple strings, we using the [] brackets for python keep each string as a word and insert it into the set as is.
+
+```python
+myset = {"cat", "dog", "chinchilla", "turtle"}
+
+myset.update(["weasel", "furret"])
+print(myset)
+#results
+{'furret', 'chinchilla', 'turtle', 'dog', 'weasel', 'cat'}
+```
+
+to remove items from a set, you can use either of the two methods. remove() or discard(). We can also use a method just like lists to pop() the last key off a list.
+
+example of remove and discard. (this will remove the key that is put into the parentheses of either remove and discard)
+
+```python
+myset = {"cat", "dog", "chinchilla", "turtle"}
+myset.remove("cat")
+# or use discard
+myset.discard("cat")
+print(myset)
+#results
+{'dog', 'turtle', 'chinchilla'}
+```
+
+using pop method to remove last key in the set
+```python
+myset = {"cat", "dog", "chinchilla", "turtle"}
+myset.pop()
+print(myset)
+#results
+{'cat', 'chinchilla', 'dog'}
+```
+
+keep in mind that the last key in the set might not be the one that you want to removed because sets are not ordered and index like lists
