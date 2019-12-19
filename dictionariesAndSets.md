@@ -114,3 +114,24 @@ We can print out both the keys and values with items() method. The results will 
 # the parenthesis around the data represent tuple data type. 
 ```
 
+___
+## Extra functions for dictionaries
+
+to check the length of a dictionary
+```python
+print(len(people))
+```
+
+we can use the pop() method similar to lists and specify which key value pair to remove my selecting the specific key
+example
+```python
+people.pop("Jonathan")
+print(people)
+#results 
+# {'Nathalie': 25, 'Daniel': 35}
+# key and value of jonathan and 28 are now removed
+```
+
+
+
+
