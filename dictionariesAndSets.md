@@ -68,3 +68,49 @@ for i in people:
 #25
 #35
 ```
+
+there is also a value method that can be used that will print out all the values just like example above
+
+```python
+for i in people.values():
+    print(i)
+#results
+#28
+#25
+#35
+```
+
+we can also create new key value pairs for the dictionary. To create a new pair, first add a unique key and key into the dictionary and assign a value to the key as so
+
+```python
+    people["Derek"] = 22
+```
+
+Derek has been added to the people dictionary with his age. What if i want to check if one of the people currently exists in the dictionary?
+
+we can use conditional statement and keyword * in *
+
+```python
+if "Derek" in people:
+    print("Derek is present")
+else:
+    print("not Present")
+```
+
+___
+## Advance dictionary functions
+___
+
+We can print out both the keys and values with items() method. The results will be returned as a tuple(* we will cover tuples in the future * )
+
+```python
+    for i, j in people.items():
+        print(i,j)
+    #results
+#('Jonathan', 28)
+#('Nathalie', 25)
+#('Daniel', 35)
+
+# the parenthesis around the data represent tuple data type. 
+```
+
