@@ -19,7 +19,10 @@ computerFinalResponse = False
 
 def favNumberRange(myFavorite, computerFavorite):
   found = False
-  for i in range(1, myFavorite):
+  if myFavorite == computerFavorite:
+    print(f"| (• ◡•)| my {computerFavorite} is within your range")
+
+  for i in range(1, myFavorite + 1):
     if computerFavorite == int(i):
       print(f"| (• ◡•)| my {computerFavorite} is within your range")
       found = True
