@@ -120,3 +120,8 @@ print(i)
 This will not print, even though the logic is correct. Please keep this in mind where you would need to indent your code.
 
 General guidelines for where to indent your code
+* within your condition flow logic
+* within your function
+* for loops
+* while loops
+* nested blocks of code
