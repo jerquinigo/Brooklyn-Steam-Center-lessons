@@ -22,3 +22,21 @@ print("nice to meet you")
 
 
 #please use import math for these next questions
+
+
+# use a math function that returns the current whole number without decimal value.
+#ex. 34.7 will return 34
+
+
+nums = 45.6
+
+
+# use a math function that returns the next whole number without decimal value.
+# ex 34.7 will return 35
+
+nums2 = 45.6
+
+
+#please print boolean true and false on screen
+
+#print statement below
