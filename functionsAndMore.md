@@ -1,4 +1,4 @@
-## Functions, default values,return, args, kwargs, pass, continue
+## Functions, default values,return, args, kwargs, pass, continue, break
 ___
 functions are a block of code that runs the instructions inside its block of code once it has been invoked. It will return its values and reset back to its default settings that were programmed. Once the function completed its task, the results will dissapear. 
 
@@ -96,3 +96,35 @@ print(printingAll2(person="jonathan", person2="nathalie"))
 ({'person': 'jonathan', 'person2': 'nathalie'}, 'is the kwargs in the function')
 ```
 
+## pass, continue and break
+
+using pass is like using a temporary placeholder. If you leave a block of code incomplete and run it in pycharm, python will respond back with an error stating that code is not working. Sometimes, a programmer might still be figuring out the right logic to put into a block of code and needs to work with other functions. To bypass this in python, we use the keyword pass. It is temporary and should be removed before code goes into production.
+
+Example of using pass
+
+```python
+if 10 > 2:
+    pass
+print("i bypassed it so i can figure out the for loop below")
+
+for i in range(1,101):
+    print(i)
+
+```
+
+By using pass, we were able to run the other blocks of code without error, but will need to return to finishing up the block of code currently holding pass.
+
+Continue and break are used to break a running block of code and continue the processes based on a condition. An example would be if a number is present in the range, break loop. Otherwise continue searching the range until end.
+
+example code of using break continue
+
+```python
+for i in range(1,51):
+  print(i)
+  if i == 25:
+    break
+  else:
+    continue
+```
+
+In this example, in the if statement, when i is equal to 25, it will break out the loop and end. Any code below break will not be executed. Be aware of that. If the number was not in the range, the else will pick up and continue searching.
