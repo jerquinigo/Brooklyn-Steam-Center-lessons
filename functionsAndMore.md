@@ -1,4 +1,4 @@
-## Functions, pass, continue and return, kwargs,args
+## Functions, default values,return, args, kwargs, pass, continue
 ___
 functions are a block of code that runs the instructions inside its block of code once it has been invoked. It will return its values and reset back to its default settings that were programmed. Once the function completed its task, the results will dissapear. 
 
@@ -66,4 +66,33 @@ print(results)
 
 results will equal 30 if the programmers passes no arguments into the function. Please keep this in mind when creating functions.
 
+## *Args
+___
+*args is a keyword in python that allows multiple arguments entered in a function to be converted into a tuple. It is a wildcard and is able to take in multiple entries. 
+Example of using *args
+
+```python
+def printingAll(*args):
+    return args
+print(printingAll(1,2,3,4))
+
+# will return 
+(1, 2, 3, 4)
+```
+
+All arguments passed in *args will be return as a tuple
+
+
+## *kwargs
+*kwargs is another keyword in python that allows multiple arguments entered in a function to be converted into a tuple with a dictionary(key value pair). think of nesting. The dictionary key value pair exists within the tuple.
+
+example of using *kwargs
+```python
+def printingAll2(**kwargs):
+  return kwargs,"is the kwargs in the function"
+print(printingAll2(person="jonathan", person2="nathalie"))
+
+## will return
+({'person': 'jonathan', 'person2': 'nathalie'}, 'is the kwargs in the function')
+```
 
